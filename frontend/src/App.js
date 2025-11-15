@@ -16,7 +16,7 @@ function AppShell() {
 
   async function fetchSessions() {
     try {
-      const res = await fetch('http://localhost:5000/api/sessions');
+      const res = await fetch('https://chatgpt-clone-five-delta.vercel.app/api/sessions');
       const data = await res.json();
       setSessions(data);
     } catch (e) {
@@ -26,7 +26,7 @@ function AppShell() {
 
   async function handleNewChat() {
     try {
-      const res = await fetch('http://localhost:5000/api/new-chat');
+      const res = await fetch('https://chatgpt-clone-five-delta.vercel.app/api/new-chat');
       const data = await res.json();
       await fetchSessions();
       navigate(`/chat/${data.id}`);
@@ -37,7 +37,7 @@ function AppShell() {
 
   async function handleDeleteSession(id) {
     try {
-      await fetch(`http://localhost:5000/api/session/${id}`, { method: 'DELETE' });
+      await fetch(`https://chatgpt-clone-five-delta.vercel.app/api/session/${id}`, { method: 'DELETE' });
       await fetchSessions();
 
       const current = window.location.pathname;
