@@ -23,7 +23,7 @@ export default function ChatWindow() {
 
   async function loadSession() {
     try {
-      const res = await fetch(`http://localhost:5000/api/session/${id}`);
+      const res = await fetch(`https://chatgpt-clone-five-delta.vercel.app/api/session/${id}`);
 
       if (!res.ok) {
         throw new Error('not found');
@@ -46,7 +46,7 @@ export default function ChatWindow() {
   async function handleSend(question) {
     try {
       await fetch(
-        `http://localhost:5000/api/chat/${id}`,
+        `https://chatgpt-clone-five-delta.vercel.app/api/chat/${id}`,
         {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
@@ -64,7 +64,7 @@ export default function ChatWindow() {
   async function handleFeedback(index, feedback) {
     try {
       await fetch(
-        `http://localhost:5000/api/feedback/${id}`,
+        `https://chatgpt-clone-five-delta.vercel.app/api/feedback/${id}`,
         {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
