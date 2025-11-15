@@ -2,8 +2,8 @@
 
 A simple ChatGPT-style conversational app built with React and Node.js. Start multiple chat sessions, switch between them, view previous conversations, and receive structured AI responses in table format.
 
-[Frontend Live Demo](https://your-frontend-demo-link.com)  
-[Backend API Demo](https://your-backend-demo-link.com)
+Frontend Deployment Link: [Link](https://69187a7e1b11500008010fbb--chatgpt-clone-lumibyteai.netlify.app/)  
+Backend Deployment Link: [Link](https://chatgpt-clone-ikb0.onrender.com/)
 
 ## Features
 
@@ -32,9 +32,9 @@ cd chatgpt-clone
 2. **Install & start backend:**
 
 ```bash
-   cd backend
-   npm install
-   npm start
+cd backend
+npm install
+npm start
 ```
 
 Backend runs at: http://localhost:5000
@@ -42,9 +42,9 @@ Backend runs at: http://localhost:5000
 3. **Install & start frontend:**
 
 ```bash
-   cd frontend
-   npm install
-   npm start
+cd frontend
+npm install
+npm start
 ```
 
 Frontend runs at: http://localhost:3000
@@ -54,7 +54,17 @@ Frontend runs at: http://localhost:3000
 - **New Chat:** Click "New Chat" to create a session.  
 - **Chat:** Type messages; backend returns structured responses.  
 - **Sessions:** View, switch, or delete sessions.  
-- **Theme:** Toggle 🌞 / 🌙 (saved in localStorage).  
+- **Theme:** Toggle 🌞 / 🌙 (saved in localStorage).
+
+## API Endpoints
+
+| Method | Route              | Description                                                     |
+|--------|---------------------|-----------------------------------------------------------------|
+| GET    | `/api/sessions`     | Returns a list of all mock session IDs/titles for the sidebar. |
+| GET    | `/api/new-chat`     | Returns a new, unique mock session ID.                         |
+| GET    | `/api/session/:id`  | Returns the full mock conversation history for a session ID.   |
+| POST   | `/api/chat/:id`     | Accepts a user question and returns a mock structured response. |
+
 
 ## Routes
 
