@@ -1,0 +1,21 @@
+.table-box {
+  margin-top: 8px;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--table-border);
+  background: var(--panel);
+}
+
+.table-box td {
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--table-border);
+}
+
+.table-box tr:nth-child(odd) td {
+  background: rgba(0, 0, 0, 0.02);
+}
+
+.k {
+  width: 35%;
+  font-weight: 600;
+}

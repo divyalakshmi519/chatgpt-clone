@@ -1,0 +1,56 @@
+.messages {
+  padding: 20px;
+  flex: 1;
+  overflow: auto;
+  background: var(--bg);
+}
+
+.msg-row {
+  display: flex;
+  margin-bottom: 12px;
+  gap: 12px;
+  align-items: flex-end;
+}
+
+.msg-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bubble {
+  max-width: 75%;
+  padding: 12px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(15,23,42,0.08);
+  background: #f3f4f6;
+}
+
+.bubble.user {
+  background: #dcf1ff;
+}
+
+.bubble.ai {
+  background: var(--panel);
+  border: 1px solid var(--table-border);
+}
+
+.feedback {
+  margin-top: 8px;
+  display: flex;
+  gap: 8px;
+}
+
+.input-area {
+  padding: 12px;
+  background: var(--panel);
+  border-top: 1px solid var(--table-border);
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}

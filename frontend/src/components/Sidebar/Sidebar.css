@@ -1,0 +1,92 @@
+.sidebar {
+  width: 300px;
+  background: var(--sidebar);
+  color: #fff;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar.collapsed {
+  width: 80px;
+  align-items: center;
+}
+
+.logo-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  background: var(--accent);
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+
+.brand {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.collapse-btn {
+  margin-left: auto;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.new-chat-btn {
+  margin-top: 12px;
+  background: #1f1f1f;
+  color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.sessions-list {
+  margin-top: 12px;
+  overflow: auto;
+  flex: 1;
+  padding-right: 6px;
+}
+
+.session-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background: #141414;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.session-item.active {
+  background: #2b2b2b;
+}
+
+.session-link {
+  color: #fff;
+  text-decoration: none;
+  flex: 1;
+}
+
+.delete-icon {
+  color: #bbb;
+  cursor: pointer;
+}
+
+.delete-icon:hover {
+  color: red;
+}
